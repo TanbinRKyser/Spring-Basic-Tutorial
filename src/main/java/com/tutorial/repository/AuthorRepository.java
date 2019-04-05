@@ -4,4 +4,5 @@ import com.tutorial.model.Author;
 import org.springframework.data.repository.CrudRepository;
 
 public interface AuthorRepository extends CrudRepository<Author, Long> {
+    Author findByFirstName( String firstName );
 }
