@@ -40,5 +40,6 @@ public class BookTest {
         Book foundBook = bookRepository.findByTitle( book.getTitle() );
         // Assert
         assertThat( foundBook.getTitle() ).isEqualTo( book.getTitle() );
+        assertThat( foundBook.getIsbn() ).isEqualTo( book.getIsbn() );
     }
 }
